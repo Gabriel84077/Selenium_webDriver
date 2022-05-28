@@ -9,21 +9,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//Proyecto sin asserts, asserts en wManager.java
 public class Proyect_selenium {
 	private WebDriver driver;
-	//public String nameSong;
-
-	//public String scan() {
-		//Scanner text = new Scanner(System.in);
-		//System.out.println("Ingrese nombre de cancion: ");
-		//String nameSong = text.nextLine();
-		//return nameSong;
-	//}
 	
 	@Before
 	public void setup() {
-		//scan();
 		System.setProperty("webdriver.chrome.driver", "src/main/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
