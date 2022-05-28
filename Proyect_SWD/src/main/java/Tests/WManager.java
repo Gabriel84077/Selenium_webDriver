@@ -41,16 +41,18 @@ public class WManager {
 		google.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//Searchs for desire item
 		assertTrue(google.writeSearch("Youtube"));
+		Thread.sleep(2000);
 		//Clicks first result
 		assertTrue(google.clickGoogle());
 		Thread.sleep(2000);
 		//Searchs for desire item
 		assertTrue(google.writeSong(inputSong));
+		Thread.sleep(2000);
 		//Clicks first result
 		assertTrue(google.clickYoutube());
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		assertTrue(google.getNameSong());
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		}
 
 	@After
